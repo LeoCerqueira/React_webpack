@@ -9,4 +9,27 @@ module.exports = {
 		filename: 'bundle.js',
 		publicPath: '/dist/',
 	},
+
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				include: /src/,
+				use: [{ loader: 'babel-loader' }],
+			},
+		],
+	},
+	// module: {
+	// 	rules: [
+	// 		{
+	// 			test: /\.js$/,
+	// 			exclude: /node_modules/,
+	// 			include: /src/,
+	// 			use: {
+	// 				loader: 'babel',
+	// 			},
+	// 		},
+	// 	],
+	// },
 };
