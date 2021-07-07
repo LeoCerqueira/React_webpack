@@ -3,10 +3,10 @@
 var React = require('react');
 var createReactClass = require('create-react-class');
 
-var Title = createReactClass({
+const App = createReactClass({
 	render: function () {
-		return <h1>Título</h1>;
+		return <div>Aplicação 200</div>;
 	},
 });
 
-export default Title;
+export default App;
