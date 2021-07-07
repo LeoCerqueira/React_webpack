@@ -5,7 +5,7 @@ var createReactClass = require('create-react-class');
 
 var Title = createReactClass({
 	render: function () {
-		return React.createElement('h1', null, 'Título');
+		return <h1>Título</h1>;
 	},
 });
 
