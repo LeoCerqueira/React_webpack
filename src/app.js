@@ -5,7 +5,7 @@ var createReactClass = require('create-react-class');
 
 const App = createReactClass({
 	render: function () {
-		return <div>Aplicação 200</div>;
+		return <div>Aplicação de |Leandro 2000</div>;
 	},
 });
 
