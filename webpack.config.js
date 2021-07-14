@@ -19,20 +19,12 @@ module.exports = {
 	plugins: [new webpack.HotModuleReplacementPlugin()],
 
 	module: {
-		preLoaders: [
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				include: /src/,
-				loader: 'standard',
-			},
-		],
 		rules: [
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
 				include: /src/,
-				use: [{ loader: 'babel-loader' }],
+				use: ['babel-loader', 'eslint-loader'],
 			},
 		],
 	},
